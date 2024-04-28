@@ -2,6 +2,8 @@ const {test,expect}= require('@playwright/test');
 const{POManager}=require('../pageObjects/POManager');
 const dataset= JSON.parse(JSON.stringify(require('../TestData/placeOrderTestData.json')));
 
+
+//multiple set data
 for(const data of dataset){
 test(`Login with Valid Credentials ${data.productName}`,async({page})=>{
 
