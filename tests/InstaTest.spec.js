@@ -15,5 +15,6 @@ await loginpage.loginToTheInsta("ximice9753@digdy.com","Dummy@123");
 await searchUserAndSendMessage.SearchUser("dummytwo30");
 
 await searchUserAndSendMessage.sendMessageToSelectedUser("Heelo Welcome Buddy!!!");
+//
 
 })
