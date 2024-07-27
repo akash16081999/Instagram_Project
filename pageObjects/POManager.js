@@ -1,21 +1,22 @@
 
-const { LoginPage } = require('./LoginPage');
-const { DashboardPage } = require('./DashboardPage');
+const {InstagramLoginPage}=require('./InstagramLoginPage');
+const {SearchUserPage}=require('./SearchUserPage')
 
 class POManager{
 
 constructor(page){
-    this.loginpage=new LoginPage(page);
-    this.dashboard=new DashboardPage(page);
+    this.InstagramLoginPage=new InstagramLoginPage(page);
+    this.SearchUserPage=new SearchUserPage(page);
 
 }
+getInstagramLoginPage(){
 
-getLoginPage(){
-    return this.loginpage;
+    return this.InstagramLoginPage;
 }
 
-getDashboardPage(){
-    return this.dashboard;
+getSerachUserPage(){
+
+    return this.SearchUserPage;
 }
 
 }
